@@ -1,0 +1,27 @@
+$bgcolor: #670674fb;
+$borderColor: green;
+body {
+	width: 400px;
+	height: 300px;
+	border: 5px solid $borderColor;
+	display: table;
+	flex-wrap: wrap;
+	align-content: center;
+	position: relative;
+	animation: mymove 5s infinite;
+	background-color: $bgcolor;
+	padding: 25px;
+	img {
+		width: 100%;
+		height: auto;
+		padding-bottom: 25px;
+	}
+}
+@keyframes mymove {
+	from {
+		left: 0px;
+	}
+	to {
+		left: 200px;
+	}
+}
